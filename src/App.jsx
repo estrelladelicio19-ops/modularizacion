@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/header'
 import Nav from './components/Nav'
 import Main from './components/Main'
+import Cuerpo from './components/CuerpoPagina'
 import Aside from './components/Aside'
 import Footer from './components/Footer'
 function App() {
@@ -40,6 +41,10 @@ function App() {
       <Header></Header>
       <Nav menu = {menus}></Nav>
       <Main titulo = {titulos} ></Main>
+      <Cuerpo titulo = {"Hola"}>
+        <h2>Segundo titulos</h2>
+        <p>Este parrafo</p>
+      </Cuerpo>
       <Aside></Aside>
       <Footer></Footer>
     </>
