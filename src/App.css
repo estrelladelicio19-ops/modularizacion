@@ -1,0 +1,201 @@
+     /* ESTILOS GENERALES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #5b1f4b;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* NAV */
+        nav {
+            background-color: #222;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* MAIN */
+        main {
+            background-color: white;
+            width: 70%;
+            margin: 35px 2% 35px 5%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            float: left;
+        }
+
+        main h2 {
+            color: #5b1f4b;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        main p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* SECTION */
+        section {
+            margin-top: 30px;
+        }
+
+        section h2 {
+            color: #5b1f4b;
+            margin-bottom: 20px;
+        }
+
+        /* TARJETAS */
+        .tarjetas {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        article {
+            background-color: #f8f1f5;
+            padding: 22px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 200px;
+            border-left: 5px solid #d4af37;
+        }
+
+        article h3 {
+            color: #5b1f4b;
+            margin-bottom: 12px;
+        }
+
+        article p {
+            font-size: 15px;
+        }
+
+        /* BOTÓN */
+        .boton {
+            display: inline-block;
+            background-color: #5b1f4b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .boton:hover {
+            background-color: #d4af37;
+        }
+
+        /* ASIDE */
+        aside {
+            background-color: #fff4d6;
+            width: 20%;
+            margin: 35px 3% 35px 0;
+            padding: 25px;
+            border-radius: 12px;
+            float: right;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        aside h2 {
+            color: #5b1f4b;
+            margin-bottom: 15px;
+        }
+
+        aside p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        aside h3 {
+            color: #5b1f4b;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        /* LIMPIAR FLOAT */
+        footer {
+            clear: both;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 12px;
+            }
+
+            main {
+                float: none;
+                width: 90%;
+                margin: 25px auto;
+            }
+
+            aside {
+                float: none;
+                width: 90%;
+                margin: 25px auto;
+            }
+
+            .tarjetas {
+                flex-direction: column;
+            }
+
+            article {
+                width: 100%;
+            }
+        }
